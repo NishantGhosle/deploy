@@ -17,14 +17,11 @@ app.get("/about", (req, res) => {
   });
 });
 
-app.post("/user", (req, res) => {
-  const { name, age } = req.body;
-
-  res.json({
-    message: "User created successfully",
-    data: { name, age },
-  });
-});
+app.get("/mine", (req,res) => {
+    res.json({
+        message:"This is mine ",
+    });
+})
 
 // Start Server
 app.listen(PORT, () => {
