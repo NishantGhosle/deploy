@@ -17,18 +17,6 @@ app.get("/about", (req, res) => {
   });
 });
 
-app.get("/mine", (req,res) => {
-    res.json({
-        message:"This is mine ",
-    });
-});
-
-app.get("/docker-deploy", (req,res) => {
-  res.json({
-    message:"This is docker deploy!!"
-  })
-})
-
 // Start Server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
